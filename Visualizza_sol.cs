@@ -104,7 +104,7 @@ namespace InTreno
                 string json = Encoding.UTF8.GetString(e.Result);
                 risultato = new RootObject();
                 risultato = JsonConvert.DeserializeObject<RootObject>(json);//deserializzo il json nel nuovo oggetto risultato
-                if (risultato.soluzioni != null)//questi due controlli li devo inspiegabilmente fare per colpa di viaggiatreno e i suoi programmatori
+                if (risultato.soluzioni != null)//questi due controlli li devo inspiegabilmente fare a causa del ritorno
                 {
                     if(risultato.soluzioni.Count != 0)//se lo metto in && con l'if sopra, solleva un'eccezione
                     {
