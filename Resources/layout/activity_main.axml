@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<AutoCompleteTextView
+			android:id="@+id/autocompletamentopt"
+			android:layout_marginTop="10dp"
+			android:hint="Partenza"
+			android:textSize="25dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<AutoCompleteTextView
+			android:id="@+id/autocompletamentoar"
+			android:hint="Destinazione"
+			android:layout_width="match_parent"
+			android:textSize="25dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"/>
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<Button
+				android:id="@+id/buttonora"
+				android:background="?android:attr/windowBackground"
+				android:layout_width="192dp"
+				android:layout_height="wrap_content"
+				android:text="Scegli Ora"/>
+			<Button
+				android:id="@+id/buttondata"
+				android:background="?android:attr/windowBackground"
+				android:layout_width="192dp"
+				android:layout_height="wrap_content"
+				android:text="Scegli Data"/>
+		</LinearLayout>
+		<Button
+				android:id="@+id/buttoncerca"
+				android:background="@android:color/holo_green_light"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="0dp"
+				android:text="Cerca Soluzioni"/>
+
+	</LinearLayout>
+	
+
+	<android.support.design.widget.BottomNavigationView
+		android:id="@+id/navigation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="0dp"
+		android:layout_marginStart="0dp"
+		android:background="?android:attr/windowBackground"
+		android:layout_alignParentBottom="true"
+		app:menu="@menu/navigation"
+		android:layout_marginRight="0.0dp" />
+
+</RelativeLayout>
